@@ -45,6 +45,12 @@ Location
 	eltonHouse
 	daichiHouse
 
+Random Encounters
+	Part One:  Dave goes low-tier GTA on people.
+
+Leveling up
+Fire Emblem style stat changes
+
 /*
 * Save Feature
 */	
