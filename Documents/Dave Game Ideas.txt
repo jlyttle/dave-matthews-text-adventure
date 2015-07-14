@@ -15,7 +15,7 @@ Entity
 		Cashier1
 		Cashier2
 		inLine
-		kramer
+		daichi
 	Badboy
 		Boss1
 		Boss2
