@@ -1,0 +1,53 @@
+Dave Matthews and the Existential Realization of the Matrix
+
+In this game you play Dave Matthews, a jack-of-all-trades man with a passion for
+McDonalds, Ballpits, Skeeball, and butchering cows. However, you do none of this
+in this game as you play a frail man realizing he is nothing more than what the
+machine he lives in says he is. 
+
+
+Entity
+	Player
+		Squid
+		Kid
+		
+	NPC
+		Cashier1
+		Cashier2
+		inLine
+		kramer
+	Badboy
+		Boss1
+		Boss2
+		Boss3
+	Helper
+		Daichi
+		Elton John
+Items
+	Ice
+	Drink - isIced, setIced, spill
+		can only hold one at a time, causing Dave to toss the current drink on the floor.
+			Coffee
+			Tea
+			Iced Coffee
+			Iced Tea
+			Coke
+			Diet Coke
+			Juice box
+			Iced juice box
+	Weapon
+		Cup
+		
+Location
+	Home
+	McDonalds
+	sashimiBar
+	eltonHouse
+	daichiHouse
+
+/*
+* Save Feature
+*/	
+	onQuit("Dave blacks out." ifCup "His *cuptype* smashes on the ground, leaving *drink* on the ground" ifSquid " while he lay in his ink. Good night sweet squid..." else ". Good night sweet prince...")
+
+	onLoad("Dave suddenly wakes up from his stasis" ifCup "with shards of glass and spilled *drink* all around him. He remembers that he is at *place* and he probably shouldn't have slept there. The *npc* stares at him, probably wondering if Dave has some sort of day sleeping disorder. Dave slowly rises up and remembers what he was doing.")
