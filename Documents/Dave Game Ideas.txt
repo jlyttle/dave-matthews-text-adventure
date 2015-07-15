@@ -7,7 +7,7 @@ machine he lives in says he is.
 
 
 Entity
-	Player
+	Player - hasCup(Checks whether Dave has a cup equipped) ,saveCup(saves last cup type and drink),lastCup(gets last cup type), lastDrink(gets last drink type)
 		Squid
 		Kid
 		
@@ -16,14 +16,23 @@ Entity
 		Cashier2
 		inLine
 		daichi
-	Badboy
+		ronaldMcdonald
+	Boss
 		Boss1
 		Boss2
 		Boss3
+		
+		Yee
+		dannyPhantomFic
+		rubiksCube
+		shinjis
+		scottAndHatsune
 	Helper
 		Daichi
 		Elton John
 Items
+	The Big Mac - ketchup, lettuce, and cheese (which Dave sees as blue) will make this turn into the Master Big Mac
+	The Master Big Mac
 	Ice
 	Drink - isIced, setIced, spill
 		can only hold one at a time, causing Dave to toss the current drink on the floor.
@@ -35,18 +44,30 @@ Items
 			Diet Coke
 			Juice box
 			Iced juice box
+			McFlurry
+	Food - setKetchup, setMustard, setPickles, setCondiments
+			Big Mac
 	Weapon
 		Cup
 		
 Location
-	Home
-	McDonalds
-	sashimiBar
-	eltonHouse
-	daichiHouse
+	normieWorld
+		Home
+		McDonalds
+		sashimiBar
+		eltonHouse
+		daichiHouse
+	daichsterWorld
+		
 
+Battle Menus:
+	Fight
+		Uses whichever item is equipped to attack.
+	Item
+		Goes to inventory where  
+		
 Random Encounters
-	Part One:  Dave goes low-tier GTA on people.
+	Part One:  Dave goes low-tier GTA on people. If anybody is in his way anywhere this will start a battle.
 
 Leveling up
 Fire Emblem style stat changes
