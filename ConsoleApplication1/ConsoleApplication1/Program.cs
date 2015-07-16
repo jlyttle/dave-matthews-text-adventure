@@ -10,25 +10,25 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("The Legend of Fate/big mac: Unlimited Dank Works in the House");
-            KeyPressRequired();
-            System.Console.WriteLine("Directed by Yung Chang");
-            KeyPressRequired();
-            System.Console.WriteLine("Music provided by Scott Oelkers and Hatsune Miku");
-            KeyPressRequired();
-            Text("Yeast-based nourishment provided by Daichi Shijima");
+            Text("The Legend of Fate/big mac: Unlimited Dank Works in the House", false);
+            Text("Directed by Yung Chang", false);
+            Text("Music provided by Scott Oelkers and Hatsune Miku", false);
+            Text("Yeast-based nourishment provided by Daichi Shijima", true);
         }
-        static void KeyPressRequired()
+        
+        static void Text(string text, Boolean press)
         {
-            //There has to be a way to make this come up on its own without having to put it after each line.  This is just begging for a mistake to happen.
-            System.Console.WriteLine("[Press the damn key, Shinji]");
-            System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
+            System.Console.WriteLine(text);
+            if (press == true)
+            {
+                System.Console.WriteLine("[Press the damn key, Shinji]");
+                System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
+            }
         }
-        static void Text(string x)
+        static void Decisions(string decisionText, Boolean press)
         {
-            System.Console.WriteLine(x);
-            System.Console.WriteLine("[Press the damn key, Shinji]");
-            System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
+
+
         }
     }
 }
