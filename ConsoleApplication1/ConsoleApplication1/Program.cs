@@ -27,7 +27,7 @@ namespace ConsoleApplication1
             }
         }
 
-        static void Text(string text, Boolean press)
+        public static void Text(string text, Boolean press)
         {
             //True leads to a required key press
             System.Console.WriteLine(text);
