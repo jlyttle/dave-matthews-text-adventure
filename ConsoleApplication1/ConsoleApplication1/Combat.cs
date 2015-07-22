@@ -64,9 +64,12 @@ namespace ConsoleApplication1
         
 
         // Represents whether or not a boss battle is active
-        Boolean bossBattle;
+       static Boolean bossBattle;
+        // Triggers end of combat if flee is successful; this to prevent exp gain, etc.
+        static Boolean endOfCombatByFleeing;
+       
 
-         void PhysAttack(float physChanceToHit)
+        static void PhysAttack(float physChanceToHit)
         {
            // physChanceToHit = 
 
@@ -79,7 +82,7 @@ namespace ConsoleApplication1
 
         }
 
-        void MagicAttack()
+       static void MagicAttack()
         {
             //If no critical hit
             // float attack = 1 * intelligence * weaponMagStrength * luckEffect;
@@ -87,13 +90,19 @@ namespace ConsoleApplication1
             //float critAttack = 1 * intelligence * weaponMagStrength * luckEffect * critMultiplier;
         }
 
-        void UseItem()
+       static void UseItem()
         {
-            //Needs a way to open a list of items, then select one
+            //Use if statements.  If an item is in the inventory, then a print command with its name occurs.
+            //For item selection, we might want to have the user type the item name in.
+            //If an item is selected, we should have its method called, with all of the effects inside of it.
         }
 
-        void Flee(Random chanceToFleeGenerator, int chanceToFlee, Boolean fleeDetermined)
+       public static void Flee()
         {
+            Random chanceToFleeGenerator = new Random();
+            int chanceToFlee = new int();
+            Boolean fleeDetermined = new Boolean();
+
             if (bossBattle == true)
             {
                 chanceToFlee = 0;
@@ -109,23 +118,87 @@ namespace ConsoleApplication1
             if (fleeDetermined == true)
             {
                 Program.Text("Dave scampered away with Big Mac in tow.", true);
-                //End combat
+                endOfCombatByFleeing = true;
             }
         }
 
-        void ClassChange()
+       static void ClassChange()
         {
 
         }
 
-        void ConsultBigMac()
+       static void ConsultBigMac()
         {
 
         }
 
-        void Talk()
+       static void Talk()
         {
 
+        }
+        // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Combat interface and non-command elements below.  Pico, I feel fully justified in using extra white space to partition this off.
+
+
+
+        static void Targeting()
+        {
+
+        }
+
+        protected static int CombatInterface()
+        {
+            Program.Text("A blasphemer who hates McDonald's appeared!", true);
+            Program.Text("What will Dave do?", false);
+            Program.Text("1.  Attack with weapon", false);
+            Program.Text("2.  Attack with cholesterol", false);
+            Program.Text("3.  Use an item", false);
+            Program.Text("4.  Change class", false);
+            Program.Text("5.  Talk to opponent", false);
+            Program.Text("6.  Consult the Big Mac", false);
+            Program.Text("7.  Flee", false);
+
+            ConsoleKeyInfo decision;
+            while (true)
+            {
+                decision = System.Console.ReadKey();
+                System.Console.Write("\r");
+                if (decision.Key == ConsoleKey.D1)
+                {
+                    //The parameter value needs to be changed later
+                    PhysAttack(1);
+                }
+                if (decision.Key == ConsoleKey.D2)
+                {
+                    MagicAttack();
+                }
+                if (decision.Key == ConsoleKey.D3)
+                {
+                    UseItem();
+                }
+                if (decision.Key == ConsoleKey.D4)
+                {
+                    ClassChange();
+                }
+                if (decision.Key == ConsoleKey.D5)
+                {
+                    Talk();
+                }
+                if (decision.Key == ConsoleKey.D6)
+                {
+                    ConsultBigMac();
+                }
+                if (decision.Key == ConsoleKey.D7)
+                {
+                    Flee();
+                    if (Combat.endOfCombatByFleeing == true)
+                    {
+                        return 1;
+                    }
+                }
+                //This probably needs to be moved
+                System.Console.WriteLine("Don't be a Daichster, press a listed number.");
+            }
         }
     }
 }
