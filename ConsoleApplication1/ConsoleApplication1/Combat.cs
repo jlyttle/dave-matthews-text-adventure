@@ -136,6 +136,8 @@ namespace ConsoleApplication1
         {
 
         }
+
+        
         // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Combat interface and non-command elements below.  Pico, I feel fully justified in using extra white space to partition this off.
 
