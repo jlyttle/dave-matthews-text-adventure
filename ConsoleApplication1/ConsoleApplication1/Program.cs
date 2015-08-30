@@ -19,11 +19,15 @@ namespace ConsoleApplication1
             int decisionValue = MakeDecision("Do you like big macs?", "Yes, big macs are love, big macs are life", "No, they have too much cholesterol", 0);
             if (decisionValue == 1)
             {
-                DecisionZero.accept();
+                System.Console.WriteLine("You are worthy");
+                System.Console.WriteLine("[Press the damn key, Shinji]");
+                System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
             }
             if (decisionValue == 2)
             {
-                DecisionZero.reject();
+                System.Console.WriteLine("Get out of here you filthy McDonald's casual");
+                System.Console.WriteLine("[Press the damn key, Shinji]");
+                System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
             }
         }
 
