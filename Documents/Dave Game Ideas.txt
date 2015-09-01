@@ -5,6 +5,19 @@ McDonalds, Ballpits, Skeeball, and butchering cows. However, you do none of this
 in this game as you play a frail man realizing he is nothing more than what the
 machine he lives in says he is. 
 
+________                      
+\______ \ _____ ___  __ ____  
+ |    |  \\__  \\  \/ // __ \ 
+ |    `   \/ __ \\   /\  ___/ 
+/_______  (____  /\_/  \___  >
+        \/     \/          \/ 
+   _____          __    __  .__                         
+  /     \ _____ _/  |__/  |_|  |__   ______  _  ________
+ /  \ /  \\__  \\   __\   __\  |  \_/ __ \ \/ \/ /  ___/
+/    Y    \/ __ \|  |  |  | |   Y  \  ___/\     /\___ \ 
+\____|__  (____  /__|  |__| |___|  /\___  >\/\_//____  >
+        \/     \/                \/     \/           \/ 
+
 
 Entity
 	Player - hasCup(Checks whether Dave has a cup equipped) ,saveCup(saves last cup type and drink),lastCup(gets last cup type), lastDrink(gets last drink type)
