@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         
         static void Main(string[] args)
         {
-
+            //intro storyline
             Text("The Legend of Fate/big mac: Unlimited Dank Works in the House", false, false);
             Text("Directed by Yung Chang", false, false);
             Text("Music provided by Scott Oelkers and Hatsune Miku", false, false);
@@ -30,7 +30,7 @@ namespace ConsoleApplication1
             Text("As the memory of his dream began fading away, he sat up, reflecting upon how famished he was.", false, false);
             Text("The seductive scent of a big mac from McDonalds crosssed his mind, but first he decided to turn on his TV for a little morning entertainment.", true, true);
             Text("As a very busy man with a full schedule ahead of him, Dave had no time for games. He realized long ago that one must seize the day.", false, false);
-            Text("He specifically learned this during an incident in 2004 whereupon his tour bus driver convinced him to dump 500 pounds of crap onto a passing ferry in Chicago.", true, true);
+            Text("He specifically learned this during an incident in 2004 whereupon his tour bus driver convinced him to dump 500 pounds of crap onto a passing ferry in Chicago.", false, false);
             Text("In any case, Dave turned on his mid-90's TV set that he hadn't replaced since the last time he got a paycheck and immediately saw an incredibly anime face greeting him with an informative ad for a new dating website.", true, true);
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Text("This new startup is the cloud solution you've been waiting for. We have on-site backups of all your friends' deaths and our 4K MP4's are auto-tagged with location information and current light levels. For a small retrieval fee, we also sync with Dropbox. Now accepting Bitcoin.", false, false);
@@ -38,6 +38,21 @@ namespace ConsoleApplication1
             Text("", true, true);
             Text("Dave:", false, false);
             Text("     \"I don't give a crap!\"", true, true);
+            Text("Dave violently threw his remote at the TV and was immediately relieved when he missed. He sank deep into his chair and sighed, like a rockstar realizing it's not the 90's anymore. Dave had recently become disillusioned with his lavish lifestyle, including the traditional South African buffet every Thursday night. He needed something else to get him through this semi-charmed kind of life. That's when he turned on his TV and immediately saw an incredibly anime face greeting him with an informative ad for a new dating website.", true, true);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Text("This new startup is the cloud solution you've been waiting for. We have on-site backups of all your friends' deaths and our 4K MP4's are auto-tagged with location information and current light levels. For a small retrieval fee, we also sync with Dropbox. Now accepting Bitcoin.", false, false);
+            Console.ResetColor();
+            Text("", true, true);
+            Text("Dave:", false, false);
+            Text("     \"I don't give a crap!\"", true, true);
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Text("We have reward tiers for McDonalds, Burger King, and SashimiBar gift cards.", false, false);
+            Console.ResetColor();
+            Text("", true, true);
+            Text("Dave:", false, false);
+            Text("     \"Alright, it's about time an infomercial was actually helpful.\"", true, true);
+            Text("And so Dave began his quest to find the Nicaea corporation and its president who was residing on his TV at this moment. Clearly Dave has problems listening because otherwise he would have known Nicaea is a website and this person was not its president... maybe.", true, true);
+            Menu.MenuBuilder();
         }
 
         public static void Text(string text, Boolean press, Boolean clear)

@@ -46,6 +46,8 @@
     <Compile Include="EnemyListing.cs" />
     <Compile Include="Items.cs" />
     <Compile Include="Combat.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="MumblingDave.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spells.cs" />
