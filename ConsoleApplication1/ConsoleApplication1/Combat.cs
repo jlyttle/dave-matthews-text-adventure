@@ -117,7 +117,7 @@ namespace ConsoleApplication1
 
             if (fleeDetermined == true)
             {
-                Program.Text("Dave scampered away with Big Mac in tow.", true);
+                Program.Text("Dave scampered away with Big Mac in tow.", true, false);
                 endOfCombatByFleeing = true;
             }
         }
@@ -150,15 +150,15 @@ namespace ConsoleApplication1
 
         protected static int CombatInterface()
         {
-            Program.Text("A blasphemer who hates McDonald's appeared!", true);
-            Program.Text("What will Dave do?", false);
-            Program.Text("1.  Attack with weapon", false);
-            Program.Text("2.  Attack with cholesterol", false);
-            Program.Text("3.  Use an item", false);
-            Program.Text("4.  Change class", false);
-            Program.Text("5.  Talk to opponent", false);
-            Program.Text("6.  Consult the Big Mac", false);
-            Program.Text("7.  Flee", false);
+            Program.Text("A blasphemer who hates McDonald's appeared!", true, false);
+            Program.Text("What will Dave do?", false, false);
+            Program.Text("1.  Attack with weapon", false, false);
+            Program.Text("2.  Attack with cholesterol", false, false);
+            Program.Text("3.  Use an item", false, false);
+            Program.Text("4.  Change class", false, false);
+            Program.Text("5.  Talk to opponent", false, false);
+            Program.Text("6.  Consult the Big Mac", false, false);
+            Program.Text("7.  Flee", false, false);
 
             ConsoleKeyInfo decision;
             while (true)
