@@ -2,20 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
-
-            Text("The Legend of Fate/big mac: Unlimited Dank Works in the House", false);
-            Text("Directed by Yung Chang", false);
-            Text("Music provided by Scott Oelkers and Hatsune Miku", false);
-            Text("Yeast-based nourishment provided by Daichi Shijima", true);
+            PrintTitleScreenText();
+            
             int decisionValue = MakeDecision("Do you like big macs?", "Yes, big macs are love, big macs are life", "No, they have too much cholesterol", 0);
             if (decisionValue == 1)
             {
@@ -86,6 +84,60 @@ namespace ConsoleApplication1
                 }
                 System.Console.WriteLine("Don't be a Daichster, press 1, 2 or 3.");
             }
+        }
+
+        private static void PrintTitleScreenText()
+        {
+            //THIS IS A SUPER SHITTY WAY TO DO THIS.
+            //What you'd want to do is overload the Text function to take an integer value that defines how long you should wait before posting the next thing.
+            Text(" __   __  __    _  ___      ___   __   __  ___   _______  _______  ______  ", false);
+            Thread.Sleep(100);
+            Text("|  | |  ||  |  | ||   |    |   | |  |_|  ||   | |       ||       ||      | ", false);
+            Thread.Sleep(100);
+            Text("|  | |  ||   |_| ||   |    |   | |       ||   | |_     _||    ___||  _    |", false);
+            Thread.Sleep(100);
+            Text("|  |_|  ||       ||   |    |   | |       ||   |   |   |  |   |___ | | |   |", false);
+            Thread.Sleep(100);
+            Text("|       ||  _    ||   |___ |   | |       ||   |   |   |  |    ___|| |_|   |", false);
+            Thread.Sleep(100);
+            Text("|       || | |   ||       ||   | | ||_|| ||   |   |   |  |   |___ |       |", false);
+            Thread.Sleep(100);
+            Text("|_______||_|  |__||_______||___| |_|   |_||___|   |___|  |_______||______| ", false);
+            Thread.Sleep(100);
+            Text(" ______   _______  __    _  ___   _ ", false);
+            Thread.Sleep(100);
+            Text("|      | |   _   ||  |  | ||   | | |", false);
+            Thread.Sleep(100);
+            Text("|  _    ||  |_|  ||   |_| ||   |_| |", false);
+            Thread.Sleep(100);
+            Text("| | |   ||       ||       ||      _|", false);
+            Thread.Sleep(100);
+            Text("| |_|   ||       ||  _    ||     |_ ", false);
+            Thread.Sleep(100);
+            Text("|       ||   _   || | |   ||    _  |", false);
+            Thread.Sleep(100);
+            Text("|______| |__| |__||_|  |__||___| |_|", false);
+            Thread.Sleep(100);
+            Text(" _     _  _______  ______    ___   _  _______ ", false);
+            Thread.Sleep(100);
+            Text("| | _ | ||       ||    _ |  |   | | ||       |", false);
+            Thread.Sleep(100);
+            Text("| || || ||   _   ||   | ||  |   |_| ||  _____|", false);
+            Thread.Sleep(100);
+            Text("|       ||  | |  ||   |_||_ |      _|| |_____ ", false);
+            Thread.Sleep(100);
+            Text("|       ||  |_|  ||    __  ||     |_ |_____  |", false);
+            Thread.Sleep(100);
+            Text("|   _   ||       ||   |  | ||    _  | _____| |", false);
+            Thread.Sleep(100);
+            Text("|__| |__||_______||___|  |_||___| |_||_______|", false);
+            Thread.Sleep(100);
+            Text("\n", false);
+            Thread.Sleep(500);
+            Text("The Legend of Fate/big mac: Unlimited Dank Works in the House", false);
+            Text("Directed by Yung Chang", false);
+            Text("Music provided by Scott Oelkers and Hatsune Miku", false);
+            Text("Yeast-based nourishment provided by Daichi Shijima", true);
         }
     }
 }
