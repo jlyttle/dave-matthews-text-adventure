@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DaveMatthewsTextAdventure
+namespace ConsoleApplication1
 {
-    class Items
+    class Dave
     {
-        public static void McFlurry()
+        public static Boolean hasCup()
         {
-
+            return true;
         }
     }
 }

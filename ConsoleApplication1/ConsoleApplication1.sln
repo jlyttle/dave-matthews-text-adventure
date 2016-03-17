@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{C13DD7B2-B98A-45BF-BB7A-A900D899DC76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DaveMatthewsTextAdventure", "ConsoleApplication1\DaveMatthewsTextAdventure.csproj", "{C13DD7B2-B98A-45BF-BB7A-A900D899DC76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9F40BBF-576A-47D8-BA83-9B94CEFBF877}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
