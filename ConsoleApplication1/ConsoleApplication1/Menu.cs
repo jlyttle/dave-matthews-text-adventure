@@ -9,7 +9,6 @@ namespace DaveMatthewsTextAdventure
 {
     class Menu
     {
-
         public static void MenuBuilder()
         {
             int maxItems = 3;
@@ -59,7 +58,7 @@ namespace DaveMatthewsTextAdventure
             }
             else if (position == 2)
             {
-                Player.dave.GetInventory().List();   
+                Player.dave.GetInventory().List();
                 System.Console.WriteLine("[Press the damn key, Shinji]");
                 System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
                 MenuBuilder();
@@ -67,9 +66,9 @@ namespace DaveMatthewsTextAdventure
             else if (position == 3)
             {
                 Console.WriteLine("Where would you like to go today?");
-                Console.WriteLine(" McDonald's");
+                Player.dave.PrintLocationList();
                 Console.WriteLine(" Back");
-                maxItems = 2;
+                maxItems = Player.dave.GetLocationList().Count + 1;
                 Console.SetCursorPosition(0, Console.CursorTop - (maxItems));
                 Console.Write("\r>");
                 Console.CursorVisible = false;
@@ -109,7 +108,7 @@ namespace DaveMatthewsTextAdventure
                     System.Console.WriteLine("[Press the damn key, Shinji]");
                     System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
                 }
-                if (position == 2) ;
+                if (position == 2)
                 {
                     MenuBuilder();
                 }

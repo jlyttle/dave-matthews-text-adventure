@@ -14,6 +14,7 @@ namespace DaveMatthewsTextAdventure
             Item.LoadItemsIntoDictinoary();
             Location.LoadLocationsIntoDictinoary();
             //WriteDebugText();
+            Menu.MenuBuilder(); //temporary
             PrintTitleScreenText();
 
             int decisionValue = MakeDecision("Do you like big macs?", "Yes, big macs are love, big macs are life", "No, they have too much cholesterol", 0);

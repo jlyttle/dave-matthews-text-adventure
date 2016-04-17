@@ -8,19 +8,34 @@ namespace DaveMatthewsTextAdventure
 {
     class Player
     {
+        public static Player dave = new Player();
         //permanent variables, belong to the class (in the scope of the class)
         public int m_maxHealth = 100;
         public int m_health;
         public Location m_location;
         public Inventory m_inventory;
-        public static Player dave = new Player();
+        public List<Location> m_locationList;
+
+        public void AddLocation(Location location)
+        {
+            m_locationList.Add(location);
+        }       
 
         public Player()
         {
             m_health = m_maxHealth;
             m_location = new Location(DaveMatthewsWorld.EARTH, "Home");
+            m_locationList = new List<Location>();
+            m_locationList.Add(m_location);
+            m_locationList.Add(new Location(DaveMatthewsWorld.NICAEA, "Daichi's House"));
+            m_locationList.Add(new Location(DaveMatthewsWorld.NICAEA, "McDonald's"));
             m_inventory = new Inventory(10);
             m_inventory.Add(new Item(DaveMathewsItemType.ITEM_SPECIAL, "", "Money Wad", 1));
+        }
+
+        public List<Location> GetLocationList()
+        {
+            return m_locationList;
         }
 
         public Inventory GetInventory()
@@ -46,6 +61,14 @@ namespace DaveMatthewsTextAdventure
         {
             m_maxHealth = m_maxHealth + amountToIncrementBy;
             return m_maxHealth;
+        }
+        public void PrintLocationList()
+        {
+            //for each item in list, print it out on a new line
+            m_locationList.ForEach(delegate (Location location)
+            {
+               location.PrintToConsole();
+            });
         }
     }
 }

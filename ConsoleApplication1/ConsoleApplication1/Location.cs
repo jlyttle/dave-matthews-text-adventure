@@ -25,12 +25,6 @@ namespace DaveMatthewsTextAdventure
             m_world = world;
             m_room = room;
         }
-        public Location(Location other)
-        {
-            m_world = other.GetWorld();
-            m_room = other.GetRoom();
-        }
-
         //setters
         public void SetWorld(DaveMatthewsWorld world)
         {
@@ -49,12 +43,13 @@ namespace DaveMatthewsTextAdventure
         }
 
         public static Dictionary<string, Location> s_Dictionary_Of_Rooms = new Dictionary<string, Location>();
+
         public static void LoadLocationsIntoDictinoary()
         {
             //Earth
-            AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "Home"));
-            AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "McDonalds"));
-            AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "Sushi Bar"));
+            //AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "Home"));
+            //AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "McDonalds"));
+            //AddOrUpdateLocationToDictionary(new Location(DaveMatthewsWorld.EARTH, "Sushi Bar"));
             //Nicaea
 
         }
@@ -83,6 +78,9 @@ namespace DaveMatthewsTextAdventure
             return null;
         }
 
-        //public string room()
+        public void PrintToConsole()
+        {
+            Console.WriteLine(" " + m_room);
+        }
     }
 }
