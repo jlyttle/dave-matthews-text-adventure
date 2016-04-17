@@ -16,10 +16,7 @@ namespace DaveMatthewsTextAdventure
             System.Console.WriteLine(" 1. Talk");
             System.Console.WriteLine(" 2. Items");
             System.Console.WriteLine(" 3. Locations");
-            // if (fartUnlocked == true)
-            //{
-            //  maxItems = 3;
-            //}
+
             Console.SetCursorPosition(0, Console.CursorTop - (maxItems));
             Console.Write("\r>");
             Console.CursorVisible = false;

@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Inventory.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Storyline.cs" />
     <Compile Include="EnemyListing.cs" />
     <Compile Include="Items.cs" />

@@ -47,7 +47,7 @@ Items
 	The Big Mac - ketchup, lettuce, and cheese (which Dave sees as blue) will make this turn into the Master Big Mac
 	The Master Big Mac
 	Ice
-	Drink - isIced, setIced, spill
+	Drink - setIced, spill
 		can only hold one at a time, causing Dave to toss the current drink on the floor.
 			Coffee
 			Tea
@@ -77,7 +77,7 @@ Battle Menus:
 	Fight
 		Uses whichever item is equipped to attack.
 	Item
-		Goes to inventory where  
+		Goes to inventory where description is written and option to use or equip (if applicable). Also contains money wad (should be a separate item?)  
 		
 Random Encounters
 	Part One:  Dave goes low-tier GTA on people. If anybody is in his way anywhere this will start a battle.
