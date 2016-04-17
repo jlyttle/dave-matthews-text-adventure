@@ -2,10 +2,7 @@ TODO
 
  - Sound effects for text
  - Menu system
- - Items
- - Locations
  - Shops
- - Heath system
  - Enemies
  - Story
  - Move text to separate method
@@ -14,3 +11,13 @@ TODO
  Methods:
   - Item
    * We want to get whether an item is a weapon, food, special, or drink
+
+   On enter:
+	- Get what the item is
+
+	MakeChoice returns Number of choice presented
+
+	Make a function that takes an item and makes decision based on item name
+	GoToLocation()
+
+	Separate for items and locations
