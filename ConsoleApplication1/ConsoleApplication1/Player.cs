@@ -13,6 +13,7 @@ namespace DaveMatthewsTextAdventure
         public int m_health;
         public Location m_location;
         public Inventory m_inventory;
+        public static Player dave = new Player();
 
         public Player()
         {
@@ -20,6 +21,11 @@ namespace DaveMatthewsTextAdventure
             m_location = new Location(DaveMatthewsWorld.EARTH, "Home");
             m_inventory = new Inventory(10);
             m_inventory.Add(new Item(DaveMathewsItemType.ITEM_SPECIAL, "", "Money Wad", 1));
+        }
+
+        public Inventory GetInventory()
+        {
+            return m_inventory;
         }
 
         public int DecreaseHealth(int amountToDecreaseBy)
@@ -41,8 +47,5 @@ namespace DaveMatthewsTextAdventure
             m_maxHealth = m_maxHealth + amountToIncrementBy;
             return m_maxHealth;
         }
-
-        //has inventory
-
     }
 }

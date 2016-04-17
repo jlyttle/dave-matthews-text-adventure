@@ -124,23 +124,28 @@ namespace DaveMatthewsTextAdventure
         {
             return m_quantity;
         }
-// 
-//         public override int GetHashCode()
-//         {
-//             return base.GetHashCode();
-//         }
-//         public override bool Equals(object obj)
-//         {
-//             try
-//             {
-//                 return (bool)(this == (Item)obj);
-//             }
-//             catch
-//             {
-//                 return false;
-//             }
-//         }
 
-        
-     }
+        public void PrintToConsole()
+        {
+            Console.WriteLine(m_name + ": " + m_quantity);
+        }
+        // 
+        //         public override int GetHashCode()
+        //         {
+        //             return base.GetHashCode();
+        //         }
+        //         public override bool Equals(object obj)
+        //         {
+        //             try
+        //             {
+        //                 return (bool)(this == (Item)obj);
+        //             }
+        //             catch
+        //             {
+        //                 return false;
+        //             }
+        //         }
+
+
+    }
 }

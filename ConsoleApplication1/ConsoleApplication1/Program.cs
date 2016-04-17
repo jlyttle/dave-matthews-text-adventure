@@ -13,6 +13,7 @@ namespace DaveMatthewsTextAdventure
         {
             Item.LoadItemsIntoDictinoary();
             Location.LoadLocationsIntoDictinoary();
+            //WriteDebugText();
             PrintTitleScreenText();
 
             int decisionValue = MakeDecision("Do you like big macs?", "Yes, big macs are love, big macs are life", "No, they have too much cholesterol", 0);
@@ -29,6 +30,14 @@ namespace DaveMatthewsTextAdventure
         }
 
         public enum textSpeed { SLOW, MEDIUM, FAST, IMMEDIATE };
+        static void WriteDebugText()
+        {
+            Inventory testInv = new Inventory(100);
+            testInv.Add(new Item(DaveMathewsItemType.ITEM_CUP, "", "iPhone", 4));
+            testInv.Add(new Item(DaveMathewsItemType.ITEM_FOOD, "", "Money Wad", 8675309));
+            testInv.Add(new Item(DaveMathewsItemType.ITEM_SPECIAL, "", "Pocket Pu$$y", 3));
+            testInv.List();
+        }
         public static void Text(string text, Boolean press, Boolean clear = false, textSpeed speed = textSpeed.MEDIUM)
         {
             //True leads to a required key press

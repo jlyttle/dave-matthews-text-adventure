@@ -32,10 +32,10 @@ namespace DaveMatthewsTextAdventure
         public void List()
         {
             //for each item in list, print it out on a new line
-            for (m_itemList.ForEach)
-                {
-
-                }
+            m_itemList.ForEach(delegate (Item item)
+            {
+                item.PrintToConsole();
+            });
+        }
         }
     }
-}

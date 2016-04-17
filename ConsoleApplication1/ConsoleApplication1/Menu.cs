@@ -9,6 +9,7 @@ namespace DaveMatthewsTextAdventure
 {
     class Menu
     {
+
         public static void MenuBuilder()
         {
             int maxItems = 3;
@@ -58,7 +59,7 @@ namespace DaveMatthewsTextAdventure
             }
             else if (position == 2)
             {
-                Console.WriteLine("Money Wad");
+                Player.dave.GetInventory().List();   
                 System.Console.WriteLine("[Press the damn key, Shinji]");
                 System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
                 MenuBuilder();
