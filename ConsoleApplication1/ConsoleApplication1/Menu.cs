@@ -66,7 +66,8 @@ namespace DaveMatthewsTextAdventure
                 System.Console.WriteLine(" Back");
                 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~");
 
-                Cursor.MakeChoice(maxItems);
+                int choiceMade = Cursor.MakeChoice(maxItems + 1);
+                Location selectedItem = Player.dave.GetLocationList()[choiceMade - 1];
                 //UseItem();
                 //MenuBuilder();
             }
@@ -89,7 +90,16 @@ namespace DaveMatthewsTextAdventure
         {
             Console.WriteLine("Dave opened his front door and caught a big juicy whiff of fresh air. As he was about to make his trek to his new lambo that he couldn't fit in his garage due to his extensive knowledge collection, an increasingly closer figure began invading his personal space. As he approached, Dave thought he recognized him as a portly version of his flautist he recently fired, complete with red Dave Matthews Band cap from the 2008 Northern Thailand tour. However, at second glance, he couldn't tell. He got his pepper spray can at the ready.");
             System.Console.WriteLine("[Press the damn key, Shinji]");
-            System.ConsoleKeyInfo keyPress = System.Console.ReadKey();
+            System.Console.ReadKey();
+            Console.WriteLine("??? - Hey Dave, it's me!");
+            System.Console.WriteLine("[Press the damn key, Shinji]");
+            System.Console.ReadKey();
+            Console.WriteLine("Dave immediately sprayed his pepper spray at the stranger. He writhed in pain, stumbling backward off his porch steps and smashed into the ground, landing on a garden gnome which promptly shattered. He also got a nosebleed from the sudden temperature change from Dave's doorstep to the ground, and also his appendix burst. His leg also broke too, but since he had nerve damage he couldn't tell, leaving him with mental confusion and anguish.");
+            System.Console.WriteLine("[Press the damn key, Shinji]");
+            System.Console.ReadKey();
+            Console.WriteLine("??? - Ow, what the hell, Dave! I'm your mentor for the game! I'm just here to show you the ropes!");
+            System.Console.WriteLine("[Press the damn key, Shinji]");
+            System.Console.ReadKey();
         }
 
     }
