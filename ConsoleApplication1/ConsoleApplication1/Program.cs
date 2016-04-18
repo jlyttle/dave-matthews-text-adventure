@@ -14,6 +14,7 @@ namespace DaveMatthewsTextAdventure
             Item.LoadItemsIntoDictinoary();
             Location.LoadLocationsIntoDictinoary();
             //WriteDebugText();
+            Sounds.Play();
             Menu.MenuBuilder(); //temporary
             PrintTitleScreenText();
 

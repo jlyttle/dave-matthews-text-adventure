@@ -59,9 +59,7 @@ namespace DaveMatthewsTextAdventure
         {
             critDamageMultiplier = 2;
             chanceToCritMultiplier = 0.01F * agility;
-
         }
-        
 
         // Represents whether or not a boss battle is active
        static Boolean bossBattle;
@@ -120,6 +118,7 @@ namespace DaveMatthewsTextAdventure
                 Program.Text("Dave scampered away with Big Mac in tow.", true, false);
                 endOfCombatByFleeing = true;
             }
+            else Program.Text("Dave tried to run away but his lucky Irish heritage was not with him that day.", true, false);
         }
 
        static void ClassChange()
